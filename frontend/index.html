@@ -1,0 +1,45 @@
+<!-- frontend/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Loan Approval - XAI with Crypto</title>
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+  <header>
+    <h1>Loan Approval Prediction</h1>
+    <p>Powered by Machine Learning, SHAP, and Cryptographic Logging</p>
+  </header>
+
+  <main>
+    <section class="btn-group">
+      <button onclick="makePrediction()">Predict Random Loan</button>
+    </section>
+
+    <section class="results" id="results">
+      <h2>Prediction Results</h2>
+      <p id="prediction"></p>
+      <p id="explanation">Explanation: SHAP summary & force plots saved.</p>
+    </section>
+
+    <section class="image-boxes">
+      <div>
+        <h3>SHAP Summary Plot</h3>
+        <img src="../shap_visuals/summary_plot.png" alt="SHAP Summary" />
+      </div>
+      <div>
+        <h3>SHAP Force Plot</h3>
+        <a href="../shap_visuals/force_plot.html" target="_blank">View Force Plot</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Loan Approval XAI-Crypto Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
